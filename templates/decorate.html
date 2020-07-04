@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{title}}</title>
+</head>
+<style>
+body {
+  background-image: url('static/last.jpg');
+}
+</style>
+<body>
+    {% for key,value in prediction.items() %}
+    <p style="text-align:center; font-size: 30px"><b>{{key}} to ₹{{value}}</b></p>
+	<br>
+	<p style="text-align:center;"> OR </p>
+	<br>
+	{% endfor %}
+	<hr><br>
+
+	<marquee> {{any_message}} </marquee>
+
+
+</body>
+</html>
